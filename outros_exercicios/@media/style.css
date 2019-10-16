@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#animation p {
+    font-size: 6rem;
+    letter-spacing: 1.5rem;
+}
+
+#animation p:nth-child(2) {
+    display: none;
+}
+
+#animation p:nth-child(3) {
+    display: none;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    #animation p:nth-child(1) {
+        display: none;
+    }
+    #animation p:nth-child(2) {
+        display: inline-block;
+        font-size: 5rem;
+    }
+    #animation p:nth-child(3) {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #animation p:nth-child(1) {
+        display: none;
+    }
+    #animation p:nth-child(2) {
+        display: none;
+    }
+    #animation p:nth-child(3) {
+        display: inline-block;
+        font-size: 3rem;
+    }
+}
